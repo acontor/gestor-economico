@@ -7,7 +7,6 @@ $fecha = $_POST["fecha"];
 $cantidad = $_POST["cantidad"];
 $descripcion = $_POST["descripcion"];
 if ($fecha == "" || $cantidad == "" || $descripcion == "" || ($tipo != "Gastos" && $tipo != "Ingresos")) {
-  echo "1";
   $msg = "<div class='alert alert-warning mt-4' role='alert'>¡Error! Rellena todos los campos correctamente para guardar el movimiento.</div>";
 } else {
   $a_fecha = explode('-', $fecha);
