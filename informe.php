@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
   $mpdf->SetTitle('Informe ' . $fecha);
   $mpdf->WriteHTML($stylesheet, \Mpdf\HTMLParserMode::HEADER_CSS);
   $mpdf->writeHtml(crearInforme($fecha, $dbh));
-  $mpdf->output('informe-' . $fecha . '.pdf', 'D');
+  $mpdf->output('informe-' . $fecha . '.pdf', 'I');
 } else {
   header('Location: informes.php');
 }
