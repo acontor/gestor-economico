@@ -133,9 +133,9 @@ require_once('utils/connect_db.php');
                             $fecha = $informes[$i][0] . "-" . $informes[$i][1];
                             $balance = $informes[$i][3] - $informes[$i][2];
                             echo "<td>" . $informes[$i][0] . "-" . $informes[$i][1] . "</td>";
-                            echo "<td>" . $balance . "</td>";
-                            echo "<td>" . $informes[$i][3] . "</td>";
-                            echo "<td>" . $informes[$i][2] . "</td>";
+                            echo "<td>" . $balance . " €</td>";
+                            echo "<td>" . $informes[$i][3] . " €</td>";
+                            echo "<td>" . $informes[$i][2] . " €</td>";
                             ?>
                             <td class="text-center">
                               <form action="informe.php" method="POST"><input type="text" class="d-none" name="fecha" value="<?= $fecha ?>"><button type="submit" class="d-sm-inline-block btn btn-sm btn-warning shadow-sm"><i class="fas fa-download fa-sm text-white-10"></i></a>
