@@ -51,7 +51,7 @@
               ¿Aún no tienes cuenta? <a href="sign_up.php" class="ml-2">Regístrate</a>
             </div>
             <div class="d-flex justify-content-center links">
-              <small>Cuentas: alvaro, juan o maria | Contraseña: Ab_12345</small>
+              <small>Cuenta: alvaro | Contraseña: Ab_12345</small>
             </div>
           </div>
         </div>
