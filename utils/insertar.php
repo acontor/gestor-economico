@@ -7,9 +7,13 @@ $fecha = $_POST["fecha"];
 $cantidad = $_POST["cantidad"];
 $descripcion = $_POST["descripcion"];
 if ($fecha == "" || $cantidad == "" || $descripcion == "" || ($tipo != "Gastos" && $tipo != "Ingresos")) {
+  echo "1";
   $msg = "<div class='alert alert-warning mt-4' role='alert'>¡Error! Rellena todos los campos correctamente para guardar el movimiento.</div>";
 } else {
   $a_fecha = explode('-', $fecha);
+  if(comprobarInforme($dbh, $a_fecha) == "") {
+    crearInforme($dbh, $a_fecha, $usuario);
+  }
   $informe = comprobarInforme($dbh, $a_fecha);
   $sql = 'INSERT INTO movimientos(id_informe, id_user, tipo, fecha, descripcion, cantidad) values(?,?,?,?,?,?)';
   $statement = $dbh->prepare($sql);
