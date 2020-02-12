@@ -107,17 +107,17 @@
                         <input type="text" class="d-none" name="tipo" value="Gastos">
                         <div class="form-row">
                           <div class="form-group col-md-6">
-                            <label for="inputName">Fecha</label>
-                            <input type="date" class="form-control" name="fecha">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha">
                           </div>
                           <div class="form-group col-md-6">
-                            <label for="inputCompany">Cantidad</label>
-                            <input type="number" class="form-control" name="cantidad" placeholder="€">
+                            <label for="cantidad">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="€">
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="inputMessage">Descripción</label>
-                          <textarea class="form-control" rows="1" name="descripcion"></textarea>
+                          <label for="descripcion">Descripción</label>
+                          <textarea class="form-control" rows="1" id="descripcion" name="descripcion"></textarea>
                         </div>
                         <button type="submit" class="btn btn-warning">Guardar</button>
                         <?php
