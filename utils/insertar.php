@@ -18,7 +18,7 @@ if ($fecha == "" || $cantidad == "" || $descripcion == "" || ($tipo != "Gastos" 
   $msg = "<div class='alert alert-success mt-4' role='alert'>Movimiento insertado correctamente.</div>";
 }
 $url = "Location: ../gasto.php?msg=$msg";
-header($url);
+//header($url);
 
 
 function comprobarInforme($dbh, $a_fecha)
